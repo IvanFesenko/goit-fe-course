@@ -1,6 +1,6 @@
-# goit-fe-course
+# GoIT Fe Core 21 Online
 
-**GoIT homeworks:**
+## GoIT homeworks:
 
 - ### HTML/CSS:
    - [Module 01-02](https://ivanfesenko.github.io/goit-fe-course/html-css/module-01/)
