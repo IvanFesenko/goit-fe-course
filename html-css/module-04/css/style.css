@@ -15,12 +15,25 @@
   margin: 40px 0 40px 0;
 }
 
-.header .logo {
+.logo {
   float: left;
+}
+
+.logo .title {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #555252;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.first-letter {
+  color: #1abc9c;
+  font-weight: 400;
 }
 
 .header .menu {
   float: right;
+  padding-top: 10px;
 }
 
 .main-menu {
@@ -50,6 +63,10 @@
   color: #1abc9c;
 }
 
+.products {
+  padding-top: 50px;
+}
+
 .section-title {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -58,7 +75,7 @@
   color: #515151;
   line-height: 32px;
   text-transform: uppercase;
-  margin: 60px;
+  padding: 10px;
 }
 
 .section-title::after {
@@ -103,7 +120,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 32px;
-  color: #ffffff;
+
   background-color: #323232;
 }
 
@@ -111,15 +128,24 @@
   background-color: #323232;
   text-transform: uppercase;
   padding-left: 12px;
+  text-decoration: none;
+}
+
+.name .title {
+  display: inline;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .name-price .price {
-  background-color: #8c8c8c;
+  background-color: rgba(255, 255, 255, 0.44);
   float: right;
   text-align: center;
   align-content: center;
   padding-left: 4px;
   padding-right: 4px;
+  color: #ffffff;
 }
 
 .product-list-item:hover .name {
@@ -136,6 +162,10 @@
   content: "";
   clear: both;
   display: block;
+}
+
+.news {
+  padding-top: 50px;
 }
 
 .article {
