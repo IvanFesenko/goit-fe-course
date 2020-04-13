@@ -56,12 +56,21 @@ body {
 .article-list-item {
   display: inline-block;
   width: 420px;
-  margin-bottom: 60px;
+ 
 }
 
 .article-list-item:nth-child(2n + 1) {
   margin-right: 56px;
 }
+
+.article-list-item:nth-child(2) {
+  margin-bottom: 60px;
+}  
+
+.article-list-item:nth-child(4) {
+  margin-bottom: 60px;
+}
+
 
 .article-list-item .title {
   font-size: 30px;
