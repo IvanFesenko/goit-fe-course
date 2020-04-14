@@ -7,8 +7,10 @@
 }
 
 .container {
-  width: 1112px;
+  max-width: 1112px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header {
@@ -77,8 +79,9 @@
 
 .slider-image {
   display: block;
-  margin: 0 auto;
-  max-width: 80%;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
 }
 
 .slider-menu {
@@ -116,7 +119,7 @@
 
 .collection-list-item {
   float: left;
-  margin-right: 30px;
+  margin-right: 24px;
   width: 255px;
 }
 
