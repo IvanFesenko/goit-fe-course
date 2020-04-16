@@ -63,7 +63,8 @@
   letter-spacing: -0.28px;
 }
 
-.main-menu .link:hover {
+.main-menu .link:hover,
+.main-menu .link:focus {
   color: #1abc9c;
 }
 
@@ -77,18 +78,82 @@
   position: relative;
 }
 
+.slider:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 2, 0.52);
+  top: 0;
+  z-index: 5;
+}
+
+.slider .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.slider .container {
+  position: relative;
+  height: 100%;
+}
+
 .slider-image {
   display: block;
   border-style: none;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .slider-menu {
   position: absolute;
-  height: 50px;
-  width: 50px;
-  background-color: red;
+  height: 115px;
+  width: 1111px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  background: transparent;
+  width: 104px;
+  height: 104px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #1abc9c;
+}
+
+.btn-right {
+  float: right;
+}
+
+.btn-left {
+  float: left;
+}
+
+.slider-menu .title {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: -1.2px;
+}
+
+.slider-menu .text {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .section-title {
@@ -113,14 +178,22 @@
   margin-top: 32px;
 }
 
+.collection {
+  padding-top: 95px;
+  background-color: #e9f0fd;
+}
+
 .collection-list {
   list-style: none;
+  padding-bottom: 100px;
 }
 
 .collection-list-item {
   float: left;
   margin-right: 24px;
   width: 255px;
+  position: relative;
+  z-index: 5;
 }
 
 .collection-list-item img {
@@ -167,4 +240,28 @@
 }
 .collection-list-item:hover .name-price {
   background: #1abc9c;
+}
+
+.collection-menu {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 10px;
+}
+
+footer {
+  padding: 38px 0;
+  background-color: #323232;
+}
+
+.footer-text {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fefefe;
+}
+
+.footer .link {
+  color: #46bfa9;
+  text-decoration: none;
 }

@@ -25,6 +25,7 @@
   color: #555252;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin: 0;
 }
 
 .logo .title::first-letter {
