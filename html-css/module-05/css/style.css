@@ -130,6 +130,7 @@
 .btn:hover,
 .btn:focus {
   background-color: #1abc9c;
+  transition: 0.4s;
 }
 
 .btn-right {
@@ -220,6 +221,12 @@
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+  padding-left: 12px;
 }
 
 .name-price .price {
@@ -230,21 +237,95 @@
   padding-left: 4px;
   padding-right: 4px;
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.36px;
 }
 
 .collection-list-item:hover .name {
   background: #1abc9c;
+  transition: 0.4s;
 }
 .collection-list-item:hover .price {
   background: #7fd9c8;
+  transition: 0.4s;
 }
 .collection-list-item:hover .name-price {
   background: #1abc9c;
+  transition: 0.4s;
+}
+
+.collection-list-item:hover .collection-menu-wrapper {
+  background: transparent;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+}
+
+.collection-menu-wrapper {
+  background: transparent;
+  padding: 10px;
+  position: absolute;
+  z-index: -1;
 }
 
 .collection-menu {
   background-color: rgba(0, 0, 0, 0.55);
   padding: 10px;
+  padding: 75px 34px;
+}
+
+.coll-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+}
+
+.coll-btn:not(:last-child) {
+  margin-right: 4px;
+}
+
+.coll-btn:hover {
+  background-color: #1abc9c;
+  transition: 0.4s;
+}
+
+.like {
+  background: url(../img/like.png) no-repeat center;
+}
+
+.arrows {
+  background: url(../img/arrows.png) no-repeat center;
+}
+
+.clock {
+  background: url(../img/clock.png) no-repeat center;
+}
+
+.menu-buy {
+  padding-top: 9px;
+}
+
+.buy-btn {
+  background: url(../img/basket.png) no-repeat left;
+  width: 166px;
+  height: 50px;
+  background-color: #323232;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-left: 28px;
+}
+
+.buy-btn:hover {
+  background-color: #1abc9c;
+  transition: 0.4s;
 }
 
 footer {
