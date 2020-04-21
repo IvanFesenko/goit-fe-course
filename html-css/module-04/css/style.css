@@ -74,7 +74,7 @@
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 900;
   color: #515151;
   line-height: 32px;
   text-transform: uppercase;
@@ -92,15 +92,7 @@
   margin-bottom: 92px;
   margin-top: 32px;
 }
-/* 
-  display: block;
-  margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 92px;
-  content: "";
-  width: 165px;
-  height: 7px;
-  background-color: #1abc9c; */
+
 
 .product-list {
   list-style: none;
@@ -109,7 +101,6 @@
 .product-list-item {
   float: left;
   width: 255px;
-  height: 316px;
   background-color: #e9f0fd;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -123,7 +114,6 @@
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 32px;
-
   background-color: #323232;
 }
 
@@ -132,13 +122,14 @@
   text-transform: uppercase;
   padding-left: 12px;
   text-decoration: none;
-}
-
-.name .title {
-  display: inline;
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.name-price .title {
+  display: inline;
+
 }
 
 .name-price .price {
@@ -146,8 +137,7 @@
   float: right;
   text-align: center;
   align-content: center;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 1px 4px;
   color: #ffffff;
 }
 
