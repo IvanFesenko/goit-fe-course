@@ -12,11 +12,12 @@
 }
 
 .header {
-  margin: 40px 0 40px 0;
+  padding: 40px 0 40px 0;
 }
 
 .logo {
   float: left;
+  text-decoration: none;
 }
 
 .logo .title {

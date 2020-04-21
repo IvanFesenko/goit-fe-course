@@ -19,6 +19,7 @@
 
 .logo {
   float: left;
+  text-decoration: none;
 }
 
 .logo .title {
@@ -26,13 +27,13 @@
   text-transform: uppercase;
   color: #555252;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 
 .logo .title::first-letter {
   color: #1abc9c;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .header .menu {
