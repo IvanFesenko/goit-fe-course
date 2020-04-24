@@ -20,18 +20,18 @@
 .logo {
   float: left;
   text-decoration: none;
-}
-
-.logo .title {
-  font-size: 30px;
-  text-transform: uppercase;
   color: #555252;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
   margin: 0;
 }
 
-.logo .title::first-letter {
+.title .logo::first-letter {
   color: #1abc9c;
   font-weight: 600;
 }
