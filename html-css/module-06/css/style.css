@@ -51,14 +51,13 @@ html {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 80px;
 }
 
-.logo-title {
-  margin: 0;
+.menu {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-link {
@@ -124,6 +123,10 @@ html {
   margin-top: 40px;
 }
 
+.services {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
 .service-list {
   list-style: none;
   display: flex;
@@ -152,6 +155,7 @@ html {
   font-size: 14px;
   color: #333333;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .service-text {
@@ -159,15 +163,16 @@ html {
   font-size: 15px;
   line-height: 24px;
   color: #999999;
-  padding-top: 20px;
 }
 
 .team {
-  margin-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .team-description {
-  margin: 0;
+  max-width: 940px;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: #999999;
@@ -194,6 +199,7 @@ html {
 .team-list-item {
   text-align: center;
   max-width: 380px;
+  margin-bottom: 30px;
 }
 
 .img-bg {
@@ -221,6 +227,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 15px;
+  font-style: italic;
   color: #999999;
 }
 
@@ -301,14 +308,15 @@ html {
 
 .footer {
   padding-top: 10px;
-  margin-bottom: 10px;
-  border-top: 1px solid #e5e5e5;
+  padding-bottom: 10px;
 }
 
 .footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px;
 }
 
 .footer-text {
@@ -326,6 +334,8 @@ html {
 .subscribe-email {
   height: 40px;
   width: 230px;
+  border: 1px solid #e7e7e7;
+  margin-right: -5px;
 }
 
 .subscribe-email::placeholder {
