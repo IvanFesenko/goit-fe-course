@@ -203,6 +203,8 @@ html {
 
 .member {
   position: relative;
+  transition: 0.2s;
+  transition-timing-function: linear;
 }
 
 .member-name {
@@ -235,6 +237,8 @@ html {
   left: 0;
   visibility: hidden;
   opacity: 0;
+  transition: 0.2s;
+  transition-timing-function: linear;
 }
 
 .team-list-item:hover .member {
