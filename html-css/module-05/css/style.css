@@ -25,10 +25,16 @@
   font-weight: 400;
 }
 
+.title-text {
+  position: absolute;
+  left: 15%;
+}
+
 .title {
   font-size: 30px;
   text-transform: uppercase;
   margin: 0;
+  display: inline-block;
 }
 
 .title .logo::first-letter {
@@ -137,10 +143,12 @@
 
 .btn-right {
   float: right;
+  background: url(../img/slice-r.png) no-repeat center;
 }
 
 .btn-left {
   float: left;
+  background: url(../img/slice-l.png) no-repeat center;
 }
 
 .slider-menu .title {
@@ -193,7 +201,7 @@
 .collection-list-item {
   float: left;
   margin-right: 24px;
-
+  max-width: 255px;
   position: relative;
   z-index: 5;
 }
@@ -243,9 +251,9 @@
 }
 
 .collection-list-item:hover .collection-menu-wrapper {
-  background: transparent;
   position: absolute;
   z-index: 10;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .collection-menu-wrapper {
@@ -253,12 +261,17 @@
   position: absolute;
   z-index: -1;
   border: 10px solid rgba(255, 255, 255, 0.44);
+
+  width: 100%;
+  height: 87%;
+  background-clip: padding-box;
 }
 
 .collection-menu {
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 10px;
-  padding: 75px 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .coll-btn {

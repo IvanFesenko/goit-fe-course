@@ -2,6 +2,48 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.visually-hidden {
+  /* Удаляем элемент из потока документа */
+  position: absolute;
+  /* Временное решение для неверно произносимого, размазанного текста */
+  white-space: nowrap;
+  /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+  width: 1px;
+  height: 1px;
+  /* Скрываем вылезающий за границы контент */
+  overflow: hidden;
+  /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+  border: 0;
+  padding: 0;
+  /* Вырезаем ту часть контента, которая должна отображаться. */
+  /* Устаревшее свойство clip для старых браузеров */
+  clip: rect(0 0 0 0);
+  /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
+  clip-path: inset(50%);
+  /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}
+
 .container {
   max-width: 1210px;
   width: 100%;
@@ -11,20 +53,26 @@ font-family: 'Roboto', sans-serif; */
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 80px;
 }
 
 .logo-title {
+  margin: 0;
+}
+
+.logo-link {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: #95e1d3;
-  margin: 0;
+  text-decoration: none;
 }
 
 .menu-list {
   list-style: none;
   display: flex;
+  margin-top: 9px;
 }
 
 .menu-list .menu-list-item:not(:last-child) {
@@ -43,6 +91,8 @@ font-family: 'Roboto', sans-serif; */
   color: #f38181;
   padding-bottom: 12px;
   border-bottom: 3px solid #f38181;
+  transition: 0.2s;
+  transition-timing-function: linear;
 }
 
 .title {
@@ -51,6 +101,8 @@ font-family: 'Roboto', sans-serif; */
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 100px;
 }
 
 .title-span {
@@ -62,13 +114,232 @@ font-family: 'Roboto', sans-serif; */
   padding-bottom: 22px;
 }
 
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
 .service-list {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .service-list-item {
-  margin-right: 72px;
+  display: flex;
+  flex-basis: 30%;
+  margin-bottom: 90px;
+}
+
+.service-list-item img {
+  display: block;
+}
+
+.service-name-text {
+  padding-left: 28px;
+}
+
+.service-name {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.service-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  padding-top: 20px;
+}
+
+.team {
+  margin-bottom: 80px;
+}
+
+.team-description {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #999999;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.team-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.team-list-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.team-list-item {
+  text-align: center;
+  max-width: 380px;
+}
+
+.img-bg {
+  background-color: #95e1d3;
+  position: relative;
+}
+
+.member {
+  position: relative;
+}
+
+.member-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+}
+
+.member-position {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #999999;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.team-list-item:hover .member {
+  transform: translate(-4%, -3%);
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.team-list-item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.social-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-links-item:not(:last-child) {
+  margin-right: 1px;
+}
+
+.social-link:hover {
+  background-color: #95e1d3;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.social-link {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook-link {
+  background-image: url(../img/facebook.png);
+}
+
+.twitter-link {
+  background-image: url(../img/twitter.png);
+}
+
+.pinterest-link {
+  background-image: url(../img/pinterest.png);
+}
+
+.instagram-link {
+  background-image: url(../img/instagram.png);
+}
+
+.footer {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-link {
+  color: #f38181;
+  text-decoration: none;
+}
+
+.subscribe-email {
+  height: 40px;
+  width: 230px;
+}
+
+.subscribe-email::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  padding-left: 13px;
+}
+
+.subscribe-btn {
+  width: 150px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  background-color: #95e1d3;
+  border-style: none;
+  cursor: pointer;
 }
