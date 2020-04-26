@@ -84,6 +84,9 @@ html {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
+  border-bottom: 0px solid #f38181;
+  transition: 0.2s;
+  transition-timing-function: linear;
 }
 
 .menu-link:hover {
