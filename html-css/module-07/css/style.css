@@ -170,6 +170,7 @@ html {
 .contact {
   background-color: #222222;
   height: 676px;
+  width: 100%;
   text-align: center;
   padding-top: 110px;
   background-image: url(../img/Map_Image.png);
