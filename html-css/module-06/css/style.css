@@ -334,11 +334,12 @@ html {
   text-decoration: none;
 }
 
+.subscribe-form {
+  display: flex;
+}
+
 .subscribe-email {
-  height: 40px;
-  width: 230px;
   border: 1px solid #e7e7e7;
-  margin-right: -5px;
 }
 
 .subscribe-email::placeholder {

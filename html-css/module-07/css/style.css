@@ -174,7 +174,7 @@ html {
   padding-top: 110px;
   background-image: url(../img/Map_Image.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
 }
 
 .contact .section-title {
