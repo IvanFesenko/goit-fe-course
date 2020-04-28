@@ -140,16 +140,44 @@ html {
 
 .service-list-item {
   display: flex;
+  flex-direction: column;
   flex-basis: 30%;
   margin-bottom: 90px;
+  position: relative;
+  padding-left: 60px;
 }
 
-.service-list-item img {
-  display: block;
+.service-list-item::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.service-name-text {
-  padding-left: 28px;
+.service-list-item:nth-child(1)::before {
+  background-image: url(../img/s01.png);
+}
+
+.service-list-item:nth-child(2)::before {
+  background-image: url(../img/s02.png);
+}
+
+.service-list-item:nth-child(3)::before {
+  background-image: url(../img/s03.png);
+}
+
+.service-list-item:nth-child(4)::before {
+  background-image: url(../img/s04.png);
+}
+
+.service-list-item:nth-child(5)::before {
+  background-image: url(../img/s05.png);
+}
+
+.service-list-item:nth-child(6)::before {
+  background-image: url(../img/s06.png);
 }
 
 .service-name {
@@ -249,6 +277,9 @@ html {
   opacity: 0;
   transition: 0.2s;
   transition-timing-function: linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-list-item:hover .member {
@@ -268,10 +299,6 @@ html {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .social-links-item:not(:last-child) {
