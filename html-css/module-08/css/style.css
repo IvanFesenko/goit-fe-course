@@ -1,0 +1,40 @@
+/* font-family: "Montserrat", sans-serif;
+font-family: "Roboto Slab", serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  height: 700px;
+  width: 100%;
+  background-image: url(../img/Vector_Smart_Object.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #1a1915;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.authorisation {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
