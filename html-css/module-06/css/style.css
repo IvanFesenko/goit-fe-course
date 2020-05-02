@@ -367,13 +367,21 @@ html {
 
 .subscribe-email {
   border: 1px solid #e7e7e7;
-}
-
-.subscribe-email::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-style: italic;
   padding-left: 13px;
+}
+
+.subscribe-email:invalid {
+  outline-color: rgb(255, 0, 0);
+}
+
+.subscribe-email:valid {
+  outline: none;
+}
+
+.subscribe-email::placeholder {
   color: #cccccc;
 }
 
