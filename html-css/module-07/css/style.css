@@ -230,18 +230,6 @@ html {
   color: #bbb;
 }
 
-.contact-name:invalid,
-.contact-mail:invalid,
-.contact-message:invalid {
-  outline-color: rgb(255, 0, 0);
-}
-
-.contact-name:valid,
-.contact-mail:valid,
-.contact-message:valid {
-  outline-color: rgb(0, 80, 0);
-}
-
 .contact-mail {
   width: 455px;
   height: 52px;
@@ -290,6 +278,18 @@ html {
 .contact-message::placeholder {
   text-transform: uppercase;
   color: #bbb;
+}
+
+.contact-name:invalid:not(:placeholder-shown),
+.contact-mail:invalid:not(:placeholder-shown),
+.contact-message:invalid:not(:placeholder-shown) {
+  outline-color: rgb(255, 0, 0);
+}
+
+.contact-name:valid:not(:placeholder-shown),
+.contact-mail:valid:not(:placeholder-shown),
+.contact-message:valid:not(:placeholder-shown) {
+  outline-color: rgb(0, 80, 0);
 }
 
 .submit-btn {
