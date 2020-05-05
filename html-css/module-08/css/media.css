@@ -1,7 +1,12 @@
-@media (min-width: 500px) and (max-width: 650px) {
+@media (min-width: 768px) {
   .container {
-    width: 435px;
+    width: 478px;
   }
+
+  .header .container {
+    width: 670px;
+  }
+
   .site-navigation {
     display: flex;
     flex-direction: row-reverse;
@@ -18,42 +23,5 @@
   }
   .find-partner-btn {
     width: 228px;
-  }
-}
-
-@media (min-width: 651px) {
-  .container {
-    max-width: 940px;
-  }
-
-  .header {
-    padding-bottom: 234px;
-  }
-
-  .site-navigation {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 160px;
-    padding: 50px 50px 0 50px;
-  }
-  .authorisation {
-    margin-bottom: 0px;
-    padding-top: 0px;
-  }
-  .logo {
-    margin-bottom: 0;
-  }
-  .find-partner-btn {
-    width: 228px;
-  }
-  .title {
-    margin-bottom: 40px;
-  }
-  .description {
-    margin-bottom: 35px;
-    width: 400px;
   }
 }
