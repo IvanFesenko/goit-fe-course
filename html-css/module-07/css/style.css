@@ -286,6 +286,7 @@ html {
 .contact-mail:invalid:not(:placeholder-shown),
 .contact-message:invalid:not(:placeholder-shown) {
   outline-color: rgb(255, 0, 0);
+  outline-style: auto;
 }
 
 .contact-name:valid:not(:placeholder-shown),
