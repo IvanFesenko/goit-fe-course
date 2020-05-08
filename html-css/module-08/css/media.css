@@ -22,13 +22,46 @@
   .logo {
     margin-bottom: 0;
   }
-  .find-partner-btn {
-    width: 228px;
+
+  .title {
+    font-size: 52px;
+    width: 510px;
   }
+}
+.find-partner-btn {
+  width: 228px;
 }
 
 @media (min-width: 960px) {
   .container {
     width: 940px;
+  }
+
+  .authorisation {
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .site-navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+    padding-top: 50px;
+  }
+
+  .title {
+    font-size: 52px;
+    width: 510px;
+    margin-bottom: 40px;
+  }
+
+  .header {
+    padding-bottom: 234px;
   }
 }
