@@ -1,4 +1,8 @@
 @media (min-width: 520px) {
+  .header {
+    background-image: url(../img/header-bg.png);
+  }
+
   .site-navigation {
     max-width: 480px;
   }
