@@ -13,7 +13,6 @@ html {
 
 .container {
   width: 280px;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -202,8 +201,6 @@ html {
   font-weight: 700;
   font-size: 14px;
   color: #ff4e50;
-  text-decoration: none;
-  margin: 0 auto;
   border: 2px solid #ff4e50;
   border-radius: 25px;
   background-color: transparent;
@@ -214,15 +211,3 @@ html {
   outline: none;
   cursor: pointer;
 }
-
-/* .site-navigation {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-}
-
-.authorisation {
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
-} */
