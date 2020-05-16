@@ -1,0 +1,22 @@
+@media (min-width: 419px) {
+  .authorisation {
+    margin-bottom: 0;
+  }
+  .site-navigation {
+    flex-direction: row-reverse;
+    margin-bottom: 160px;
+  }
+  .header {
+    padding-bottom: 246px;
+  }
+}
+
+@media (min-width: 576px) {
+  .title {
+    font-size: 52px;
+  }
+  .description {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+}
