@@ -43,7 +43,6 @@
 }
 
 .site-navigation {
-  text-align: center;
   padding-top: 32px;
 }
 
@@ -100,9 +99,15 @@
   text-align: center;
 }
 
+.partner {
+  padding-top: 70px;
+  padding-bottom: 58px;
+}
+
 .partner-title {
   font-size: 22px;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .partner-list-item {
@@ -149,4 +154,20 @@
 .tweet::after {
   background-image: url(../img/icons/s04.png);
   background-color: #4e73db;
+}
+
+.more-patners-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  width: 193px;
+  outline: none;
+  cursor: pointer;
 }
