@@ -18,6 +18,10 @@
     width: auto;
     font-size: 24px;
   }
+
+  .partner-list {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 768px) {

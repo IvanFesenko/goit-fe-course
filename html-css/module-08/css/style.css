@@ -79,9 +79,9 @@ html {
 }
 
 .description {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", serif;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -126,6 +126,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .partner-list-item {
@@ -188,7 +189,7 @@ html {
 }
 
 .partner-motto {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", serif;
   font-weight: 300;
   font-size: 14px;
   color: #666;
