@@ -3,7 +3,6 @@
     margin-bottom: 0;
   }
   .site-navigation {
-    flex-direction: row-reverse;
     margin-bottom: 160px;
   }
   .header {
@@ -20,9 +19,15 @@
     margin-bottom: 48px;
   }
 }
-
+/* 
 @media (min-width: 768px) {
   .site-navigation {
     max-width: 670px;
+  }
+} */
+
+@media (min-width: 980px) {
+  .container {
+    max-width: 940px;
   }
 }
