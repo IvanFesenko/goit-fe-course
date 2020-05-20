@@ -86,6 +86,7 @@ a:hover {
   color: #fff;
   text-decoration: none;
   text-align: center;
+  letter-spacing: -0.03em;
 }
 
 .title {
@@ -113,6 +114,7 @@ a:hover {
   display: block;
   text-align: center;
   margin: 0 auto;
+  outline: none;
 }
 
 .partner {

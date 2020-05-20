@@ -84,7 +84,7 @@ html {
 }
 
 .container {
-  width: 1210px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -152,4 +152,52 @@ html {
   font-weight: 700;
   color: #fff;
   font-size: 14px;
+}
+
+.services-title,
+.team-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.services-title__br,
+.team-title__br {
+  text-transform: none;
+  font-family: "Kaushan Script", cursive;
+  display: block;
+  margin-bottom: 22px;
+}
+
+.services-title::after,
+.team-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.services,
+.team {
+  padding-top: 46px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__list-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  margin-bottom: 90px;
+  position: relative;
+  padding-left: 60px;
 }
