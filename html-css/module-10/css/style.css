@@ -103,7 +103,7 @@ html {
   background-position: center;
   background-size: cover;
   padding-top: 28px;
-  padding-bottom: 184px;
+  padding-bottom: 226px;
 }
 
 .container {
@@ -190,7 +190,8 @@ html {
   font-size: 150px;
   font-weight: 700;
   width: 800px;
-  margin: 0 auto 120px auto;
+  margin: 0 auto 60px auto;
+  letter-spacing: -0.04em;
 }
 
 .header__title-br {
@@ -199,6 +200,8 @@ html {
   font-size: 72px;
   color: #fff;
   text-transform: none;
+  margin-bottom: 18px;
+  letter-spacing: 0;
 }
 
 .header__btn {
@@ -279,7 +282,7 @@ html {
   text-transform: none;
   font-family: "Kaushan Script", cursive;
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   font-size: 24px;
   font-weight: 400;
 }
@@ -295,10 +298,9 @@ html {
   margin-top: 40px;
 }
 
-.services,
-.team {
+.services {
   padding-top: 46px;
-  padding-bottom: 36px;
+  padding-bottom: 20px;
 }
 
 .services__list {
@@ -358,6 +360,10 @@ html {
   color: #999;
 }
 
+.team {
+  padding-bottom: 36px;
+}
+
 .team-description {
   max-width: 960px;
   margin: 0 auto 92px auto;
@@ -371,6 +377,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
