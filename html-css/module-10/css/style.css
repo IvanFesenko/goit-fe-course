@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 /* kaushan-script-regular - latin */
 @font-face {
   font-family: "Kaushan Script";
@@ -78,18 +71,18 @@ html {
 }
 
 .header {
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../img/header-bg-min.png);
   background-image: -webkit-gradient(
       linear,
       left bottom,
       left top,
       from(rgba(252, 227, 138, 0.9)),
       to(rgba(243, 129, 129, 0.9))
-    ),
-    url(../img/header-bg-min.png);
-  background-image: -o-linear-gradient(
-      bottom,
-      rgba(252, 227, 138, 0.9) 0%,
-      rgba(243, 129, 129, 0.9) 100%
     ),
     url(../img/header-bg-min.png);
   background-image: linear-gradient(
@@ -228,17 +221,17 @@ html {
 
 .header__btn:before {
   content: "";
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3)
+  );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
     from(rgba(255, 255, 255, 0.1)),
     to(rgba(255, 255, 255, 0.3))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.3)
   );
   background: linear-gradient(
     90deg,
@@ -257,6 +250,8 @@ html {
 
 .header__btn:hover {
   background: rgba(243, 129, 129, 0.9);
+  -webkit-transition: 0.6s linear;
+  -o-transition: 0.6s linear;
   transition: 0.6s linear;
 }
 
@@ -411,17 +406,17 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
   background-image: -webkit-gradient(
     linear,
     left bottom,
     left top,
     from(rgba(252, 227, 138, 0.9)),
     to(rgba(243, 129, 129, 0.9))
-  );
-  background-image: -o-linear-gradient(
-    bottom,
-    rgba(252, 227, 138, 0.9) 0%,
-    rgba(243, 129, 129, 0.9) 100%
   );
   background-image: linear-gradient(
     to top,
@@ -609,20 +604,22 @@ html {
   cursor: pointer;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi) {
   .header {
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url(../img/header-bg@2x-min.png);
     background-image: -webkit-gradient(
         linear,
         left bottom,
         left top,
         from(rgba(252, 227, 138, 0.9)),
         to(rgba(243, 129, 129, 0.9))
-      ),
-      url(../img/header-bg@2x-min.png);
-    background-image: -o-linear-gradient(
-        bottom,
-        rgba(252, 227, 138, 0.9) 0%,
-        rgba(243, 129, 129, 0.9) 100%
       ),
       url(../img/header-bg@2x-min.png);
     background-image: linear-gradient(

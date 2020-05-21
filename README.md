@@ -11,4 +11,5 @@
   - [Module 07](https://ivanfesenko.github.io/goit-fe-course/html-css/module-07/)
   - [Module 08](https://ivanfesenko.github.io/goit-fe-course/html-css/module-08/)
   - [Module 09](https://ivanfesenko.github.io/goit-fe-course/html-css/module-09/)
-  - [Module 10] Working on
+  - [Module 10](https://ivanfesenko.github.io/goit-fe-course/html-css/module-10/)
+  - [Module 11] Working on
