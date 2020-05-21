@@ -85,19 +85,19 @@ html {
       from(rgba(252, 227, 138, 0.9)),
       to(rgba(243, 129, 129, 0.9))
     ),
-    url(../img/header-bg.png);
+    url(../img/header-bg-min.png);
   background-image: -o-linear-gradient(
       bottom,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%
     ),
-    url(../img/header-bg.png);
+    url(../img/header-bg-min.png);
   background-image: linear-gradient(
       to top,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%
     ),
-    url(../img/header-bg.png);
+    url(../img/header-bg-min.png);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -607,4 +607,29 @@ html {
   text-transform: uppercase;
   color: #fff;
   cursor: pointer;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(rgba(252, 227, 138, 0.9)),
+        to(rgba(243, 129, 129, 0.9))
+      ),
+      url(../img/header-bg@2x-min.png);
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url(../img/header-bg@2x-min.png);
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url(../img/header-bg@2x-min.png);
+  }
 }
