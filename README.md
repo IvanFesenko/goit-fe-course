@@ -1,5 +1,7 @@
 # GoIT Fe Core 21 Online
 
+![Banner](./logo.png)
+
 ## GoIT homeworks:
 
 - ### HTML/CSS:
