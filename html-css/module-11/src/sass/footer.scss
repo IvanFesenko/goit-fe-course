@@ -1,0 +1,53 @@
+.footer-wrapper {
+  padding-top: 10px;
+  @include flexible(space-between);
+  border-top: 1px solid #e5e5e5;
+  align-items: center;
+
+  &__text {
+    font-size: 15px;
+    color: $body-main-color;
+  }
+
+  &__text--link {
+    color: $main-hover-color;
+  }
+}
+
+.footer-wrapper__form {
+  display: flex;
+
+  &-email {
+    width: 230px;
+    padding-left: 12px;
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-size: 15px;
+    border: 1px solid #e7e7e7;
+    &::placeholder {
+      color: #ccc;
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      outline-color: rgb(255, 0, 0);
+      outline-style: auto;
+    }
+
+    &:valid:not(:placeholder-shown) {
+      outline-color: rgb(0, 80, 0);
+    }
+  }
+
+  &-btn {
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,38 @@
+.services__list {
+  @include flexible(space-between);
+  flex-wrap: wrap;
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 31%;
+    margin-bottom: 90px;
+    position: relative;
+    padding-left: 60px;
+    &:hover &-icon {
+      transition: 0.6s linear;
+      transform: rotateY(360deg);
+      fill: $main-hover-color;
+    }
+  }
+
+  &-item-icon {
+    @include generate-icon(32px, 32px, #95e1d3);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &-item-name {
+    font-size: 14px;
+    color: $body-main-color;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &-item-text {
+    font-family: $secondary-font;
+    font-size: 15px;
+    color: $body-secondary-color;
+  }
+}

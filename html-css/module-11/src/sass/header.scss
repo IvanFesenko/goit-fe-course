@@ -1,0 +1,114 @@
+.header {
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../images/header-bg-min.png);
+
+  @include background-settings;
+  padding-top: 28px;
+  padding-bottom: 226px;
+  color: $header-font-color;
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url(../images/header-bg@2x-min.png);
+  }
+}
+
+.logo {
+  font-size: 30px;
+  color: $header-font-color;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.menu {
+  @include flexible(space-between);
+  margin-bottom: 164px;
+
+  &__list {
+    width: 618px;
+    @include flexible(space-between);
+    padding-top: 8px;
+  }
+
+  &__list-link {
+    color: $header-font-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 0px solid $second-hover-color;
+    transition: 0.15s;
+    &:hover {
+      color: $second-hover-color;
+      padding-bottom: 12px;
+      border-bottom: 3px solid $second-hover-color;
+      transition: 0.3s;
+    }
+  }
+}
+
+.menu-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &__icon {
+    @include generate-icon(18px, 18px, $header-font-color);
+    transition: 0.3s;
+  }
+  &:hover &__icon {
+    fill: $second-hover-color;
+    transition: 0.3s;
+    transform: scale(1.5);
+  }
+}
+
+.header__btn {
+  border: 3px solid $header-font-color;
+  width: 160px;
+  height: 40px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  @include flexible(center);
+  align-items: center;
+  font-weight: 700;
+  color: $header-font-color;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    height: 35px;
+    width: 50px;
+
+    background: linear-gradient(
+      90deg,
+      rgba(252, 227, 138, 0.1),
+      rgba(252, 227, 138, 0.3)
+    );
+
+    position: absolute;
+    top: 0px;
+    left: -75px;
+    transform: skewX(-45deg);
+  }
+
+  &:hover {
+    background: rgba(243, 129, 129, 0.9);
+    transition: 0.6s linear;
+  }
+  &:hover:before {
+    left: 170px;
+    transition: 0.4s linear;
+  }
+}

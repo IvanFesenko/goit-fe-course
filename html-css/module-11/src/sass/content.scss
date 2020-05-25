@@ -1,0 +1,23 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $main-font;
+  color: $header-font-color;
+}
+
+.services {
+  padding-top: 46px;
+  padding-bottom: 20px;
+}
+
+.team {
+  padding-bottom: 36px;
+}
+
+.footer {
+  padding-top: 46px;
+  padding-bottom: 22px;
+}

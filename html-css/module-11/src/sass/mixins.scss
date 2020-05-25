@@ -1,0 +1,26 @@
+@mixin flexible($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin pseudo($width, $height) {
+  content: "";
+  width: $width;
+  height: $height;
+}
+
+@mixin generate-icon($width, $height, $color) {
+  width: $width;
+  height: $height;
+  fill: $color;
+}
+
+@mixin background-settings(
+  $repeat: no-repeat,
+  $position: center,
+  $size: cover
+) {
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
