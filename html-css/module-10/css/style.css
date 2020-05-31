@@ -120,8 +120,8 @@ html {
   margin-bottom: 164px;
 }
 
-.menu__list {
-  width: 620px;
+.navigation__list {
+  width: 490px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,9 +129,10 @@ html {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 16px;
+  margin-right: 52px;
 }
 
-.menu__list-link {
+.navigation__list-link {
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -139,6 +140,17 @@ html {
   -webkit-transition: 0.15s;
   -o-transition: 0.15s;
   transition: 0.15s;
+}
+
+.buttons-list {
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 16px;
 }
 
 .menu-btn {
@@ -167,7 +179,7 @@ html {
   transform: scale(1.5);
 }
 
-.menu__list-link:hover {
+.navigation__list-link:hover {
   color: #fce38a;
   padding-bottom: 12px;
   border-bottom: 3px solid #fce38a;
