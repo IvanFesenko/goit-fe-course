@@ -142,6 +142,10 @@ html {
   transition: 0.15s;
 }
 
+.menu-wrapper {
+  display: flex;
+}
+
 .buttons-list {
   width: 80px;
   display: -webkit-box;
@@ -188,25 +192,43 @@ html {
   transition: 0.3s;
 }
 
-.header__title {
-  text-align: center;
+.section-title {
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.section-title__br {
+  text-transform: none;
+  font-family: "Kaushan Script", cursive;
+  display: block;
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.section-title--header {
   color: #fff;
   font-size: 150px;
-  font-weight: 700;
   width: 800px;
   margin: 0 auto 60px auto;
   letter-spacing: -0.04em;
 }
 
-.header__title-br {
-  display: block;
-  font-family: "Kaushan Script", cursive;
+.section-title__br--header {
   font-size: 72px;
   color: #fff;
-  text-transform: none;
-  margin-bottom: 18px;
   letter-spacing: 0;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .header__btn {
@@ -217,16 +239,13 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  text-transform: uppercase;
+
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 700;
-  color: #fff;
-  font-size: 14px;
   position: relative;
   overflow: hidden;
 }
@@ -274,28 +293,7 @@ html {
   transition: 0.4s linear;
 }
 
-.services-title,
-.team-title {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  color: #333;
-  margin-bottom: 50px;
-}
-
-.services-title__br,
-.team-title__br {
-  text-transform: none;
-  font-family: "Kaushan Script", cursive;
-  display: block;
-  margin-bottom: 18px;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.services-title::after,
-.team-title::after {
+.section-title--pseudo::after {
   content: "";
   display: block;
   width: 60px;
@@ -537,7 +535,7 @@ html {
   padding-bottom: 22px;
 }
 
-.footer-wrapper {
+.footer-content {
   padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,21 +549,21 @@ html {
   align-items: center;
 }
 
-.footer-wrapper__text {
+.copyright {
   font-size: 15px;
   color: #333;
 }
 
-.footer-wrapper__text--link {
+.copyright__link {
   color: #f38181;
 }
 
-.footer-wrapper__form {
+.subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.footer-wrapper__form-email {
+.subscribe-form__email {
   width: 230px;
   padding-left: 12px;
   font-family: var(--secondary-font);
@@ -574,36 +572,36 @@ html {
   border: 1px solid #e7e7e7;
 }
 
-.footer-wrapper__form-email::-webkit-input-placeholder {
+.subscribe-form__email::-webkit-input-placeholder {
   color: #ccc;
 }
 
-.footer-wrapper__form-email::-moz-placeholder {
+.subscribe-form__email::-moz-placeholder {
   color: #ccc;
 }
 
-.footer-wrapper__form-email:-ms-input-placeholder {
+.subscribe-form__email:-ms-input-placeholder {
   color: #ccc;
 }
 
-.footer-wrapper__form-email::-ms-input-placeholder {
+.subscribe-form__email::-ms-input-placeholder {
   color: #ccc;
 }
 
-.footer-wrapper__form-email::placeholder {
+.subscribe-form__email::placeholder {
   color: #ccc;
 }
 
-.footer-wrapper__form-email:invalid:not(:placeholder-shown) {
+.subscribe-form__email:invalid:not(:placeholder-shown) {
   outline-color: rgb(255, 0, 0);
   outline-style: auto;
 }
 
-.footer-wrapper__form-email:valid:not(:placeholder-shown) {
+.subscribe-form__email:valid:not(:placeholder-shown) {
   outline-color: rgb(0, 80, 0);
 }
 
-.footer-wrapper__form-btn {
+.subscribe-form__btn {
   width: 150px;
   height: 40px;
   background-color: #95e1d3;
