@@ -15,7 +15,7 @@
 // const ADMIN_PASSWORD = 'jqueryismyjam';
 // let message;
 
-const ADMIN_PASSWORD = "jqueryismyjam";
+const ADMIN_PASSWORD = "qwerty";
 let message;
 
 const input = prompt("Введите свой пароль для входа!");
