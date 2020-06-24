@@ -1,24 +1,15 @@
 "use strict";
 
-// Напиши скрипт проверки количества товаров на складе. Есть переменные total (количество товаров на складе) и ordered (единиц товара в заказе).
-// Сравни эти значения и по результатам выведи:
-// Если в заказе указано число, превышающее количество товаров на складе, то выведи сообщение "На складе недостаточно твоаров!".
-// В другом случае выводи сообщение "Заказ оформлен, с вами свяжется менеджер".
+const btnTaskTwo = document.querySelector("#task-two");
 
-// Проверь работоспособность кода с разными значениями переменной ordered, например 20, 80 и 130.
-// const total = 100;
-// const ordered = 50;
+btnTaskTwo.addEventListener("click", () => {
+  const total = 100;
+  const ordered = 50;
 
-const total = 100;
-const ordered = 50;
+  const chekedResulte =
+    total > ordered
+      ? "Заказ оформлен, с вами свяжется менеджер"
+      : "На складе недостаточно твоаров!";
 
-// const ordered = 20;
-// const ordered = 80;
-// const ordered = 130;
-
-const chekedResulte =
-  total > ordered
-    ? "Заказ оформлен, с вами свяжется менеджер"
-    : "На складе недостаточно твоаров!";
-
-console.log(chekedResulte);
+  console.log(chekedResulte);
+});
