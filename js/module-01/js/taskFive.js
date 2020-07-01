@@ -1,68 +1,56 @@
 "use strict";
-// Пользователь может оформить доставку товара к себе в страну, указав ее при посещении страницы в prompt.
-// Учти, пользователь может ввести имя страны не только буквами нижнего регистра, а к примеру 'кИтАЙ'.
 
-// Напиши скрипт который выводит сообщение о стоимости доставки в указанную страну.
-// Обязательно используй switch. Формат сообщения: 'Доставка в [страна] будет стоить [цена] кредитов'.
+const btnTaskFive = document.querySelector("#task-five");
 
-// Но доставка есть не везде, если указанной страны нет в списке,
-// то выводи в alert сообщение 'В вашей стране доставка не доступна'.
+btnTaskFive.addEventListener("click", () => {
+  const china = "Китай";
+  const chile = "Чили";
+  const australia = "Австралия";
+  const india = "Индия";
+  const jamaica = "Ямайка";
 
-// Ниже приведен список стран и стоимость доставки.
+  let price;
+  let message;
 
-// Китай - 100 кредитов
-// Чили - 250 кредитов
-// Австралия - 170 кредитов
-// Индия - 80 кредитов
-// Ямайка - 120 кредитов
+  const input = prompt(
+    "Введите название страны в которую необходимо доставить товар! Доступные страны: Китай, Чили, Австралия, Индия, Ямайка."
+  );
 
-const china = "Китай";
-const chile = "Чили";
-const australia = "Австралия";
-const india = "Индия";
-const jamaica = "Ямайка";
+  if (input === null) {
+    message = "Отменено пользователем!";
+  } else {
+    const inputInUC = input[0].toUpperCase() + input.slice(1).toLowerCase();
 
-let price;
-let message;
+    switch (inputInUC) {
+      case china:
+        price = 100;
+        message = `Доставка в ${china} будет стоить ${price} кредитов`;
+        break;
 
-const input = prompt(
-  "Введите название страны в которую необходимо доставить товар! Доступные страны: Китай, Чили, Австралия, Индия, Ямайка."
-);
+      case chile:
+        price = 250;
+        message = `Доставка в ${chile} будет стоить ${price} кредитов`;
+        break;
 
-if (input === null) {
-  message = "Отменено пользователем!";
-} else {
-  const inputInLC = input.toUpperCase();
+      case australia:
+        price = 170;
+        message = `Доставка в ${australia} будет стоить ${price} кредитов`;
+        break;
 
-  switch (inputInLC) {
-    case china:
-      price = 100;
-      message = `Доставка в ${china} будет стоить ${price} кредитов`;
-      break;
+      case india:
+        price = 80;
+        message = `Доставка в ${india} будет стоить ${price} кредитов`;
+        break;
 
-    case chile:
-      price = 250;
-      message = `Доставка в ${chile} будет стоить ${price} кредитов`;
-      break;
+      case jamaica:
+        price = 120;
+        message = `Доставка в ${jamaica} будет стоить ${price} кредитов`;
+        break;
 
-    case australia:
-      price = 170;
-      message = `Доставка в ${australia} будет стоить ${price} кредитов`;
-      break;
+      default:
+        alert("В вашу страну доставка не доступна");
+    }
 
-    case india:
-      price = 80;
-      message = `Доставка в ${india} будет стоить ${price} кредитов`;
-      break;
-
-    case jamaica:
-      price = 120;
-      message = `Доставка в ${jamaica} будет стоить ${price} кредитов`;
-      break;
-
-    default:
-      alert("В вашу страну доставка не доступна");
+    console.log(message);
   }
-}
-
-console.log(message);
+});

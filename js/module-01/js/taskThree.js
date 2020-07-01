@@ -1,30 +1,19 @@
 "use strict";
 
-// Напиши скрипт имитирующий авторизацию администратора в панели управления.
-// Есть переменная message в которую будет записано сообщение о результате.
-// При загрузке страницы у посетителя запрашивается пароль через prompt:
+const btnTaskThree = document.querySelector("#task-three");
 
-// Если нажали Cancel, записать в message строку 'Отменено пользователем!'
-// В протовном случае, если введен пароль который совпадает со значением константы ADMIN_PASSWORD,
-// записать в message строку 'Добро пожаловать!'
+btnTaskThree.addEventListener("click", () => {
+  const ADMIN_PASSWORD = "qwerty";
+  let message;
 
-// В противном случае, то есть если ни одно из предыдущих условий не выполнилось, записать в
-// message строку 'Доступ запрещен, неверный пароль!'
+  const input = prompt("Введите свой пароль для входа!");
 
-// После всех проверок вывести в alert значение переменной message.
-// const ADMIN_PASSWORD = 'jqueryismyjam';
-// let message;
-
-const ADMIN_PASSWORD = "qwerty";
-let message;
-
-const input = prompt("Введите свой пароль для входа!");
-
-if (input === null) {
-  message = "Отменено пользователем!";
-} else if (input === ADMIN_PASSWORD) {
-  message = "Добро пожаловать!";
-} else {
-  message = "Доступ запрещен, неверный пароль!";
-}
-alert(message);
+  if (input === null) {
+    message = "Отменено пользователем!";
+  } else if (input === ADMIN_PASSWORD) {
+    message = "Добро пожаловать!";
+  } else {
+    message = "Доступ запрещен, неверный пароль!";
+  }
+  alert(message);
+});
