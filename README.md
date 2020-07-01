@@ -18,4 +18,7 @@
   - [Module 11](https://ivanfesenko.github.io/goit-fe-course/html-css/module-11/build/)
 
 - ### JavaScript:
-  - [Module 01] working on
+  - [Module 01](https://ivanfesenko.github.io/goit-fe-course/js/module-01/)
+  - [Module 02] Working on...
+  
+  
