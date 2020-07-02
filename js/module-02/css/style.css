@@ -27,9 +27,6 @@ html {
   margin-bottom: 10px;
 }
 
-.password {
-  color: #c0301c;
-  font-weight: 700;
+.check {
   display: block;
-  padding-top: 10px;
 }
