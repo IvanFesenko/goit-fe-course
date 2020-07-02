@@ -4,7 +4,6 @@ const btnTaskFive = document.querySelector("#task-five");
 
 const checkForSpam = function (message) {
   let stringForTest = message.toLowerCase();
-  console.log(stringForTest.indexOf("spam"));
   if (
     stringForTest.indexOf("spam") !== -1 ||
     stringForTest.indexOf("sale") !== -1
