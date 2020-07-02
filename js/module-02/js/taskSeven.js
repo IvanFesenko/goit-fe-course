@@ -1,6 +1,6 @@
 "use strict";
 
-const btnTaskSix = document.querySelector("#task-seven");
+const btnTaskSeven = document.querySelector("#task-seven");
 
 const isLoginValid = function (login) {
   if (login.length >= 4 && login.length <= 16) {
@@ -26,7 +26,7 @@ const addLogin = function (allLogins, login) {
   return "Логин успешно добавлен!";
 };
 
-btnTaskSix.addEventListener("click", () => {
+btnTaskSeven.addEventListener("click", () => {
   const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
   console.log(addLogin(logins, "Ajax")); // 'Логин успешно добавлен!'
