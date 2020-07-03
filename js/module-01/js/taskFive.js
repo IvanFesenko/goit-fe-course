@@ -25,32 +25,35 @@ btnTaskFive.addEventListener("click", () => {
       case china:
         price = 100;
         message = `Доставка в ${china} будет стоить ${price} кредитов`;
+        console.log(message);
         break;
 
       case chile:
         price = 250;
         message = `Доставка в ${chile} будет стоить ${price} кредитов`;
+        console.log(message);
         break;
 
       case australia:
         price = 170;
         message = `Доставка в ${australia} будет стоить ${price} кредитов`;
+        console.log(message);
         break;
 
       case india:
         price = 80;
         message = `Доставка в ${india} будет стоить ${price} кредитов`;
+        console.log(message);
         break;
 
       case jamaica:
         price = 120;
         message = `Доставка в ${jamaica} будет стоить ${price} кредитов`;
+        console.log(message);
         break;
 
       default:
         alert("В вашу страну доставка не доступна");
     }
-
-    console.log(message);
   }
 });

@@ -21,10 +21,6 @@ btnTaskFour.addEventListener("click", () => {
 
     if (totalPrice > credits) {
       message = "Недостаточно средств на счету!";
-    } else if (input === 1) {
-      message = `Вы купили ${input} дроид, на счету осталось ${result} кредитов.`;
-    } else if (input >= 2 && input <= 4) {
-      message = `Вы купили ${input} дроида, на счету осталось ${result} кредитов.`;
     } else {
       message = `Вы купили ${input} дроидов, на счету осталось ${result} кредитов.`;
     }

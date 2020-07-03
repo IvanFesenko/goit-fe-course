@@ -16,7 +16,7 @@ btnTaskSix.addEventListener("click", () => {
     }
 
     input = Number(input);
-    if (Number.isNaN(input)) {
+    if (isNaN(input)) {
       alert("Было введено не число, попробуйте еще раз");
       continue;
     }

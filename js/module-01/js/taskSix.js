@@ -15,7 +15,7 @@ btnTaskSix.addEventListener("click", () => {
     }
 
     input = Number(input);
-    const checkForNaN = Number.isNaN(input);
+    const checkForNaN = isNaN(input);
 
     if (checkForNaN) {
       alert("Было введено не число, попробуйте еще раз");
