@@ -17,7 +17,9 @@ btnTaskFive.addEventListener("click", () => {
   );
 
   if (input === null) {
-    message = "Отменено пользователем!";
+    alert("Отменено пользователем!");
+  } else if (!input.trim()) {
+    alert("Введена пустая строка");
   } else {
     const inputInUC = input[0].toUpperCase() + input.slice(1).toLowerCase();
 
