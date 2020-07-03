@@ -18,12 +18,10 @@ btnTaskFour.addEventListener("click", () => {
 
     const totalPrice = input * pricePerDroid;
     const result = credits - totalPrice;
-
-    if (totalPrice > credits) {
-      message = "Недостаточно средств на счету!";
-    } else {
-      message = `Вы купили ${input} дроидов, на счету осталось ${result} кредитов.`;
-    }
+    message =
+      totalPrice <= credits
+        ? `Вы купили ${input} дроидов, на счету осталось ${result} кредитов.`
+        : "Недостаточно средств на счету!";
   } else {
     message = "Вы ввели некорректное значение!";
   }
