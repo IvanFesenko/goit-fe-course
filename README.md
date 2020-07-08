@@ -20,4 +20,5 @@
 - ### JavaScript:
   - [Module 01](https://ivanfesenko.github.io/goit-fe-course/js/module-01/)
   - [Module 02](https://ivanfesenko.github.io/goit-fe-course/js/module-02/)
-  - [Module 03] Working on...
+  - [Module 03](https://ivanfesenko.github.io/goit-fe-course/js/module-03/)
+  - [Module 04] Working on...
