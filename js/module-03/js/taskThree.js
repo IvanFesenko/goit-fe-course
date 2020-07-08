@@ -5,13 +5,20 @@ const btnTaskThree = document.querySelector("#task-three");
 const findBestEmployee = function (employees) {
   let bestValue = 0;
   let BestEmployee;
-  for (const key of Object.keys(employees)) {
-    if (employees[key] > bestValue) {
-      bestValue = employees[key];
+  // for (const key of Object.keys(employees)) {
+  //   if (employees[key] > bestValue) {
+  //     bestValue = employees[key];
+  //     BestEmployee = key;
+  //   }
+  // }
+
+  for (let [key, value] of Object.entries(employees)) {
+    if (value > bestValue) {
+      bestValue = value;
       BestEmployee = key;
     }
   }
-  return BestEmployee;
+  return `${BestEmployee}: ${bestValue}`;
 };
 
 btnTaskThree.addEventListener("click", () => {

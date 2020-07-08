@@ -10,9 +10,11 @@ const productsSix = [
 ];
 
 const getAllPropValues = function (arr, prop) {
-  let result = [];
+  const result = [];
   for (const obj of arr) {
-    result.push(obj[prop]);
+    if (obj[prop]) {
+      result.push(obj[prop]);
+    }
   }
   return result;
 };
