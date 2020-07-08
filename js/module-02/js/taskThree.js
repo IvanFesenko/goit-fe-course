@@ -3,7 +3,7 @@
 const btnTaskThree = document.querySelector("#task-three");
 
 const findLongestWord = function (string) {
-  let array = string.split(" ");
+  const array = string.split(" ");
   let longestWord = 0;
   let result;
   const arrayLength = array.length;

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-hw-01</title>
+    <meta name="author" content="Ivan Fesenko" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="task-section">
+        <h2 class="title">Задание 1</h2>
+        <p class="task">
+          Напиши скрипт, который, для объекта user, последовательно: добавляет
+          поле mood со значением 'happy' заменяет значение hobby на 'skydiving'
+          заменяет значение premium на false выводит содержимое объекта user в
+          формате ключ:значение используя Object.keys() и for...of
+        </p>
+        <button class="btn" id="task-one">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 2</h2>
+        <p class="task">
+          Напиши функцию countProps(obj), считающую кол-во свойств в объекте.
+          Функция возвращает число - количество свойств.* Вызовы функции для
+          проверки работоспособности твоей реализации. */
+          <span class="check">console.log(countProps({})); // 0</span>
+          <span class="check"
+            >console.log(countProps({ name: 'Mango', age: 2 })); // 2
+          </span>
+          <span class="check"
+            >console.log(countProps({ mail: 'poly@mail.com', isOnline: true,
+            score: 500 })); // 3
+          </span>
+        </p>
+        <button class="btn" id="task-two">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 3</h2>
+        <p class="task">
+          Напиши функцию findBestEmployee(employees), которая принимает объект
+          сотрудников и возвращает имя самого продуктивного (который выполнил
+          больше всех задач). Сотрудники и кол-во выполненых задач содержатся
+          как свойства объекта в формате "имя":"кол-во задач".
+        </p>
+        <button class="btn" id="task-three">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 4</h2>
+        <p class="task">
+          Напиши функцию countTotalSalary(employees) принимающую объект зарплат.
+          Функция считает общую сумму запрплаты работников и возращает ее.
+          Каждое поле объекта, передаваемого в функцию, имеет вид
+          "имя":"зарплата".
+        </p>
+        <button class="btn" id="task-four">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 5</h2>
+        <p class="task">
+          Напиши функцию getAllPropValues(arr, prop), которая получает массив
+          объектов и имя свойства. Возвращает массив значений определенного
+          свойства prop из каждого объекта в массиве.
+        </p>
+        <button class="btn" id="task-five">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 6</h2>
+        <p class="task">
+          Напиши функцию calculateTotalPrice(allProdcuts, productName), которая
+          получает массив объектов и имя продукта (значение свойства name).
+          Возвращает общую стоимость продукта (цена * количество).
+        </p>
+        <button class="btn" id="task-six">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 7</h2>
+        <p class="task">
+          Напиши скрипт управления личным кабинетом интернет банка. Есть объект
+          account в котором необходимо реализовать методы для работы с балансом
+          и историей транзакций. Для проверки использовать объект "account" в
+          консоли.
+        </p>
+        <!-- <button class="btn" id="task-seven">Run script</button> -->
+      </section>
+    </div>
+
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/taskOne.js"></script>
+    <script src="./js/taskTwo.js"></script>
+    <script src="./js/taskThree.js"></script>
+    <script src="./js/taskFour.js"></script>
+    <script src="./js/taskFive.js"></script>
+    <script src="./js/taskSix.js"></script>
+    <script src="./js/taskSeven.js"></script>
+  </body>
+</html>

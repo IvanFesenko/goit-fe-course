@@ -5,7 +5,7 @@ const btnTaskFour = document.querySelector("#task-four");
 const formatString = function (string) {
   const maxLength = 40;
   if (string.length > maxLength) {
-    return string.substring(0, maxLength) + "...";
+    return string.slice(0, maxLength) + "...";
   }
   return string;
 };
