@@ -3,8 +3,8 @@
 const btnTaskThree = document.querySelector("#task-three");
 
 const findBestEmployee = function (employees) {
-  let bestValue = 0;
-  let BestEmployee;
+  let bestValue;
+  let bestEmployee;
   // for (const key of Object.keys(employees)) {
   //   if (employees[key] > bestValue) {
   //     bestValue = employees[key];
@@ -12,13 +12,13 @@ const findBestEmployee = function (employees) {
   //   }
   // }
 
-  for (let [key, value] of Object.entries(employees)) {
-    if (value > bestValue) {
+  for (const [key, value] of Object.entries(employees)) {
+    if (!bestValue || value > bestValue) {
       bestValue = value;
-      BestEmployee = key;
+      bestEmployee = key;
     }
   }
-  return `${BestEmployee}: ${bestValue}`;
+  return `${bestEmployee}: ${bestValue}`;
 };
 
 btnTaskThree.addEventListener("click", () => {
@@ -26,8 +26,8 @@ btnTaskThree.addEventListener("click", () => {
     findBestEmployee({
       ann: 29,
       david: 35,
-      helen: 1,
       lorence: 99,
+      helen: 1,
     })
   ); // lorence
 
