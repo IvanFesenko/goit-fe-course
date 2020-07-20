@@ -21,4 +21,6 @@
   - [Module 01](https://ivanfesenko.github.io/goit-fe-course/js/module-01/)
   - [Module 02](https://ivanfesenko.github.io/goit-fe-course/js/module-02/)
   - [Module 03](https://ivanfesenko.github.io/goit-fe-course/js/module-03/)
-  - [Module 04] Working on...
+  - [Module 04](https://ivanfesenko.github.io/goit-fe-course/js/module-04/)
+  - [Module 05](https://ivanfesenko.github.io/goit-fe-course/js/module-05/)
+  - [Module 06]working on...

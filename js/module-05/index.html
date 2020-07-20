@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-hw-05</title>
+    <meta name="author" content="Ivan Fesenko" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="task-section">
+        <h2 class="title">Задание 1</h2>
+        <p class="task">
+          Напиши функцию-конструктор Account, которая создает объект со
+          свойствами login и email. В prototype функции-конструктора добавь
+          метод getInfo(), который выводит в консоль значения полей login и
+          email объекта который его вызвал.
+        </p>
+        <button class="btn" id="task-one">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 2</h2>
+        <p class="task">
+          Напиши класс User для создания пользователя со следующим свойствами:
+          name - строка age - число followers - число Добавь метод getInfo(),
+          который, выводит строку: User ${имя} is ${возраст} years old and has
+          ${кол-во фоловеров} followers
+        </p>
+        <button class="btn" id="task-two">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 3</h2>
+        <p class="task">
+          Напиши класс Storage, который будет создавать объекты для управления
+          складом товаров. При вызове будет получать один аргумент - начальный
+          массив товаров, и записывать его в свойство items. Добавь методы
+          класса: getItems() - возвращает массив текущих товаров addItem(item) -
+          получает новый товар и добавляет его к текущим removeItem(item) -
+          получет товар и, если он есть, удаляет его из текущих
+        </p>
+        <button class="btn" id="task-three">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 4</h2>
+        <p class="task">
+          Напиши класс StringBuilder. На вход он получает один параметр -
+          строку, которую записывает в свойство _value. Добавь классу следующий
+          функционал: Геттер value - возвращает текущее значение поля _value
+          Метод append(str) - получает парметр str (строку) и добавляет ее в
+          конец _value Метод prepend(str) - получает парметр str (строку) и
+          добавляет ее в начало value Метод pad(str) - получает парметр str
+          (строку) и добавляет ее в начало и в конец _value
+        </p>
+        <button class="btn" id="task-four">Run script</button>
+      </section>
+      <section class="task-section">
+        <h2 class="title">Задание 5</h2>
+        <p class="task">
+          Напиши класс Car с указанными свойствами и методами. class Car { /* *
+          Добавь статический метод `getSpecs(car)`, * который принимает
+          объект-машину как параметр и выводит * в консоль значения свойств
+          maxSpeed, speed, isOn, distance и price. */ /* * Конструктор получает
+          объект настроек. * * Добавь свойства будущеего экземпляра класса: *
+          speed - текущая скорость, изначально 0 * price - цена автомобиля *
+          maxSpeed - максимальная скорость * isOn - заведен ли автомобиль,
+          значения true или false. Изначально false * distance - общий
+          киллометраж, изначально 0 */ constructor() {} /* * Добавь геттер и
+          сеттер для свойства price, * который будет работать с свойством цены
+          автомобиля. */ /* * Добавь код для того чтобы завести автомобиль *
+          Записывает в свойство isOn значение true */ turnOn() {} /* * Добавь
+          код для того чтобы заглушить автомобиль * Записывает в свойство isOn
+          значение false, * и сбрасывает текущую скорость в 0 */ turnOff() {} /*
+          * Добавялет к свойству speed полученное значение, * при условии что
+          результирующая скорость * не больше чем значение свойства maxSpeed */
+          accelerate(value) {} /* * Отнимает от свойства speed полученное
+          значение, * при условии что результирующая скорость не меньше нуля */
+          decelerate(value) {} /* * Добавляет в поле distance киллометраж (hours
+          * speed), * но только в том случае если машина заведена! */
+          drive(hours) {} }
+        </p>
+        <button class="btn" id="task-five">Run script</button>
+      </section>
+    </div>
+
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/taskOne.js"></script>
+    <script src="./js/taskTwo.js"></script>
+    <script src="./js/taskThree.js"></script>
+    <script src="./js/taskFour.js"></script>
+    <script src="./js/taskFive.js"></script>
+  </body>
+</html>
