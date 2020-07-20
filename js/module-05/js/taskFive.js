@@ -92,9 +92,9 @@ class Car {
   }
 }
 
-btnTaskFive.addEventListener("click", () => {
-  const mustang = new Car({ maxSpeed: 200, price: 2000 });
+const mustang = new Car({ maxSpeed: 200, price: 2000 });
 
+btnTaskFive.addEventListener("click", () => {
   mustang.turnOn();
   mustang.accelerate(50);
   mustang.drive(2);
