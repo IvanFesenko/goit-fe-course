@@ -3,7 +3,7 @@
 const btnTaskTwo = document.getElementById("task-two");
 
 const inventory = {
-  items: ["Knife", "Gas mask"],
+  items: ["Knife", "Gas mask bind", "Gas mask call", "Gas mask apply"],
   add(itemName) {
     console.log(`Adding ${itemName} to inventory`);
     this.items.push(itemName);
@@ -14,23 +14,32 @@ const inventory = {
   },
 };
 
-const invokeInventoryAction = function (itemName, action) {
+const invokeInventoryActionBind = function (itemName, action) {
   console.log(`Invoking action on ${itemName}`);
-
   const makeAction = action.bind(inventory);
   makeAction(itemName);
+};
 
-  // action(itemName);
+const invokeInventoryActionCall = function (itemName, action) {
+  console.log(`Invoking action on ${itemName}`);
+  action.call(inventory, itemName);
+};
+
+const invokeInventoryActionApply = function (itemName, action) {
+  console.log(`Invoking action on ${itemName}`);
+  action.apply(inventory, [itemName]);
 };
 
 btnTaskTwo.addEventListener("click", () => {
   console.log(inventory.items);
-  invokeInventoryAction("Medkit", inventory.add);
-  invokeInventoryAction("Mask gaz", inventory.add.bind(inventory));
+  invokeInventoryActionBind("Medkit bind", inventory.add);
+  invokeInventoryActionCall("Medkit call", inventory.add);
+  invokeInventoryActionApply("Medkit apply", inventory.add);
 
   console.log(inventory.items); // ['Knife', 'Gas mask', 'Medkit']
-  invokeInventoryAction("Gas mask", inventory.remove);
-  invokeInventoryAction("Mask gaz", inventory.remove.bind(inventory));
+  invokeInventoryActionBind("Gas mask bind", inventory.remove);
+  invokeInventoryActionCall("Gas mask call", inventory.remove);
+  invokeInventoryActionApply("Gas mask apply", inventory.remove);
 
   console.log(inventory.items); // ['Knife', 'Medkit']
 });
