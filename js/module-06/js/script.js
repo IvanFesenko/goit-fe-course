@@ -10,6 +10,7 @@ const getUserNames = (users) => {
 //****** Вариант 2 ******
 //const getUserNames = (users) => users.map((user) => user.name);
 
+console.log("Результат Задание 1:");
 console.log(getUserNames(users));
 //==== Задание 1 =======================================================
 
@@ -22,6 +23,7 @@ const getUsersWithEyeColor = (users, color) => {
 //****** Вариант 2 ******
 //const getUsersWithEyeColor = (users, color) => users.filter((user) => user.eyeColor === color);
 
+console.log("Результат Задание 2:");
 console.log(getUsersWithEyeColor(users, "blue"));
 //==== Задание 2 =======================================================
 
@@ -37,6 +39,7 @@ const getUsersWithGender = (users, gender) => {
 // const getUsersWithGender = (users, gender) =>
 //     users.filter(user => user.gender === gender).map(user => user.name);
 
+console.log("Результат Задание 3:");
 console.log(getUsersWithGender(users, "male"));
 //==== Задание 3 =======================================================
 
@@ -44,20 +47,21 @@ console.log(getUsersWithGender(users, "male"));
 
 //Получить массив только неактивных пользователей (поле isActive).
 //****** Вариант 1 ******
-const getInactiveUsers = (users) => {
-  return users.filter((user) => !user.isActive).map((user) => user);
-};
+// const getInactiveUsers = (users) => {
+//   return users.filter((user) => !user.isActive).map((user) => user);
+// };
 //****** Вариант 2 ******
-//const getInactiveUsers = (users) => users.filter((user) => !user.isActive);
+const getInactiveUsers = (users) => users.filter((user) => !user.isActive);
 
+console.log("Результат Задание 4:");
 console.log(getInactiveUsers(users));
 
 //****** Вариант 1 ******
-const getActiveUsers = (users) => {
-  return users.filter((user) => user.isActive).map((user) => user);
-};
+// const getActiveUsers = (users) => {
+//   return users.filter((user) => user.isActive).map((user) => user);
+// };
 //****** Вариант 2 ******
-//const getActiveUsers = (users) => users.filter((user) => user.isActive);
+const getActiveUsers = (users) => users.filter((user) => user.isActive);
 
 console.log(getActiveUsers(users));
 
@@ -71,7 +75,7 @@ const getUserWithEmail = (users, email) => {
 };
 //****** Вариант 2 ******
 // const getUserWithEmail = (users, email) => users.find((user) => user.email === email);
-
+console.log("Результат Задание 5:");
 console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
 console.log(getUserWithEmail(users, "elmahead@omatom.com"));
 //==== Задание 5 =======================================================
@@ -79,11 +83,9 @@ console.log(getUserWithEmail(users, "elmahead@omatom.com"));
 //==== Задание 6 =======================================================
 //Получить массив пользователей попадающих в возрастную категорию от min до max лет (поле age).
 const getUsersWithAge = (users, min, max) => {
-  return users
-    .filter((user) => user.age <= max && user.age >= min)
-    .map((user) => user);
+  return users.filter((user) => user.age <= max && user.age >= min);
 };
-
+console.log("Результат Задание 6:");
 console.log(getUsersWithAge(users, 20, 30));
 console.log(getUsersWithAge(users, 30, 40));
 
@@ -103,6 +105,7 @@ console.log(getUsersWithAge(users, 30, 40));
 const calculateTotalBalance = (users) =>
   users.reduce((totalBalance, user) => totalBalance + user.balance, 0);
 
+console.log("Результат Задание 7:");
 console.log(calculateTotalBalance(users));
 
 //==== Задание 7 =======================================================
@@ -114,6 +117,7 @@ const getUsersWithFriend = (users, friendName) =>
     .filter((user) => user.friends.includes(friendName))
     .map((user) => user.name);
 
+console.log("Результат Задание 8:");
 console.log(getUsersWithFriend(users, "Briana Decker"));
 console.log(getUsersWithFriend(users, "Goldie Gentry"));
 
@@ -129,26 +133,32 @@ const getNamesSortedByFriendsCount = (users) =>
     )
     .map((user) => user.name);
 
+console.log("Результат Задание 9:");
 console.log(getNamesSortedByFriendsCount(users));
 
 //==== Задание 9 =======================================================
 
 //==== Задание 10 =======================================================
 //Получить массив всех умений всех пользователей (поле skills), при этом не должно быть повторяющихся умений и они должны быть отсортированы в алфавитном порядке.
-const getSortedUniqueSkills = (users) =>
-  users
-    .reduce((usersSkills, user) => {
-      usersSkills.push(...user.skills);
-      return usersSkills;
-    }, [])
-    .reduce((uniquesSkills, skill) => {
-      if (!uniquesSkills.includes(skill)) {
-        uniquesSkills.push(skill);
-      }
-      return uniquesSkills;
-    }, [])
-    .sort();
+const getSortedUniqueSkills = (users) => {
+  /****** Вариант 1 ******/
+  // const usersSkills = users.reduce((usersSkills, user) => {
+  //   return usersSkills.concat(user.skills);
+  // }, []);
+  // return usersSkills
+  //   .filter((skill, i) => usersSkills.indexOf(skill) === i)
+  //   .sort();
+  /****** Вариант 2 ******/
+  return [
+    ...new Set(
+      users.reduce((usersSkills, user) => {
+        return usersSkills.concat(user.skills);
+      }, [])
+    ),
+  ].sort();
+};
 
+console.log("Результат Задание 10:");
 console.log(getSortedUniqueSkills(users));
 // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem',
 // 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
