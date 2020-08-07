@@ -114,13 +114,14 @@ console.log(getUsersWithFriend(users, "Goldie Gentry"));
 
 //==== Задание 9 =======================================================
 //Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
-const getNamesSortedByFriendsCount = (users) =>
-  users
+const getNamesSortedByFriendsCount = (users) => {
+  return [...users]
     .sort(
       (firstUser, secondUser) =>
         firstUser.friends.length - secondUser.friends.length
     )
     .map((user) => user.name);
+};
 
 console.log("Результат Задание 9:");
 console.log(getNamesSortedByFriendsCount(users));
