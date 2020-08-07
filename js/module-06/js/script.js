@@ -46,24 +46,13 @@ console.log(getUsersWithGender(users, "male"));
 //==== Задание 4 =======================================================
 
 //Получить массив только неактивных пользователей (поле isActive).
-//****** Вариант 1 ******
-// const getInactiveUsers = (users) => {
-//   return users.filter((user) => !user.isActive).map((user) => user);
-// };
-//****** Вариант 2 ******
 const getInactiveUsers = (users) => users.filter((user) => !user.isActive);
 
 console.log("Результат Задание 4:");
 console.log(getInactiveUsers(users));
 
-//****** Вариант 1 ******
-// const getActiveUsers = (users) => {
-//   return users.filter((user) => user.isActive).map((user) => user);
-// };
-//****** Вариант 2 ******
-const getActiveUsers = (users) => users.filter((user) => user.isActive);
-
-console.log(getActiveUsers(users));
+// const getActiveUsers = (users) => users.filter((user) => user.isActive);
+// console.log(getActiveUsers(users));
 
 //==== Задание 4 =======================================================
 
