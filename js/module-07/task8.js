@@ -44,13 +44,12 @@ function boxGeneration(size) {
 
 function createBoxes(amount) {
   const basicSize = 30;
-  const arr = [];
+  const fragment = document.createDocumentFragment();
   for (let i = 0; i <= amount; i++) {
     const size = basicSize + i * 10;
-    arr.push(boxGeneration(size));
+    fragment.appendChild(boxGeneration(size));
   }
-
-  return boxes.append(...arr);
+  return boxes.appendChild(fragment);
 }
 
 buttonRen.addEventListener("click", renderBoxes);
