@@ -68,7 +68,7 @@ function onPressKey(event) {
   if (event.code === "Escape") {
     closeModal();
   } else if (event.code === "ArrowLeft") {
-    curSrc = getModalSrc();
+    const curSrc = getModalSrc();
     let current = refs.imgSources.findIndex((el) => el.src === curSrc);
     if (current === 0) {
       current = refs.imgSources.length;
@@ -76,7 +76,7 @@ function onPressKey(event) {
     const newIndex = refs.imgSources.find((el, i) => i === current - 1);
     changeModalSrc(newIndex.src);
   } else if (event.code === "ArrowRight") {
-    curSrc = getModalSrc();
+    const curSrc = getModalSrc();
     let current = refs.imgSources.findIndex((el) => el.src === curSrc);
     if (current === refs.imgSources.length - 1) {
       current = -1;
