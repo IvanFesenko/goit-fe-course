@@ -5,7 +5,6 @@ const refs = {
   btnClose: document.querySelector('button[data-action="close-lightbox"]'),
   lightbox: document.querySelector(".lightbox"),
   openedImg: document.querySelector(".lightbox__image"),
-  imgSources: [],
 };
 
 function createGalleryItem(image, index) {
@@ -21,8 +20,6 @@ function createGalleryItem(image, index) {
     alt: image.description,
   });
   galleryImage.classList.add("gallery__image");
-  refs.imgSources.push({ id: index, src: image.original });
-
   galleryLink.appendChild(galleryImage);
   galleryItem.appendChild(galleryLink);
   return galleryItem;
@@ -65,25 +62,29 @@ function closeModal() {
 }
 
 function onPressKey(event) {
-  if (event.code === "Escape") {
-    closeModal();
-  } else if (event.code === "ArrowLeft") {
-    const curSrc = getModalSrc();
-    let current = refs.imgSources.findIndex((el) => el.src === curSrc);
-    if (current === 0) {
-      current = refs.imgSources.length;
-    }
-    const newIndex = refs.imgSources.find((el, i) => i === current - 1);
-    changeModalSrc(newIndex.src);
-  } else if (event.code === "ArrowRight") {
-    const curSrc = getModalSrc();
-    let current = refs.imgSources.findIndex((el) => el.src === curSrc);
-    if (current === refs.imgSources.length - 1) {
-      current = -1;
-    }
-    const newIndex = refs.imgSources.find((el, i) => i === current + 1);
-    changeModalSrc(newIndex.src);
+  if (event.code === "Escape") closeModal();
+  else if (event.code === "ArrowLeft") onPrevClick();
+  else if (event.code === "ArrowRight") onNextClick();
+}
+
+function onPrevClick() {
+  const curSrc = getModalSrc();
+  let current = gallery.findIndex((el) => el.original === curSrc);
+  if (current === 0) {
+    current = gallery.length;
   }
+  const newIndex = gallery.find((el, i) => i === current - 1);
+  changeModalSrc(newIndex.original);
+}
+
+function onNextClick() {
+  const curSrc = getModalSrc();
+  let current = gallery.findIndex((el) => el.original === curSrc);
+  if (current === gallery.length - 1) {
+    current = -1;
+  }
+  const newIndex = gallery.find((el, i) => i === current + 1);
+  changeModalSrc(newIndex.original);
 }
 
 function onOverlayClick(event) {
